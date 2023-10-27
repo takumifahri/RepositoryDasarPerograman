@@ -1,4 +1,6 @@
 import streamlit as st
+
+import math_operationa as cincin
 st.title("Simple Calculator")
 
 x = st.number_input("Enter the first number:")
@@ -11,14 +13,14 @@ result = None
 
 if st.button("Calculate"):
     if operation == "Add":
-        result = add(x, y)
+        result = cincin.add(x, y)
     elif operation == "Subtract":
-        result = subtract(x, y)
+        result = cincin.subtract(x, y)
     elif operation == "Multiply":
-        result = multiply(x, y)
+        result = cincin.multiply(x, y)
     elif operation == "Divide":
         try:
-            result = divide(x, y)
+            result = cincin.divide(x, y)
         except ZeroDivisionError:
             st.error("Division by zero is not allowed.")
 
