@@ -1,6 +1,6 @@
 import streamlit as st
 
-import math_operationa as cincin
+import math_operation as cincin
 st.title("Simple Calculator")
 
 x = st.number_input("Enter the first number:")
